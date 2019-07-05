@@ -90,8 +90,8 @@ func runInjectJS() {
 }
 
 func main() {
-	runLocalHTTP()
-	//runLocalFile()
+	// runLocalHTTP()
+	// runLocalFile()
 	//runDataURL()
-	//runInjectJS()
+	runInjectJS()
 }

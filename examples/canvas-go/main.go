@@ -47,7 +47,7 @@ var indexHTML = fmt.Sprintf(`
 `, windowWidth, windowHeight)
 
 func startServer() string {
-	ln, err := net.Listen("tcp", "127.0.0.1:0")
+	ln, err := net.Listen("tcp", "0.0.0.0:8888")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -85,6 +85,7 @@ func handleRPC(w webview.WebView, data string) {
 
 func main() {
 	url := startServer()
+	fmt.Println(url)
 	w := webview.New(webview.Settings{
 		Width:  windowWidth,
 		Height: windowHeight,
@@ -93,5 +94,6 @@ func main() {
 		ExternalInvokeCallback: handleRPC,
 	})
 	defer w.Exit()
+	<-time.After(time.Second * 5)
 	w.Run()
 }

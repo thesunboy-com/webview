@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"github.com/zserge/webview"
+	"time"
 )
 
 // Counter is a simple example of automatic Go-to-JS data binding
@@ -11,6 +13,7 @@ type Counter struct {
 
 // Add increases the value of a counter by n
 func (c *Counter) Add(n int) {
+	fmt.Println(n)
 	c.Value = c.Value + int(n)
 }
 
@@ -27,7 +30,15 @@ func main() {
 
 	w.Dispatch(func() {
 		// Inject controller
-		w.Bind("counter", &Counter{})
+		counter := new(Counter)
+		go func() {
+			for {
+				time.Sleep(time.Second)
+				fmt.Println("累加:1")
+				counter.Add(1)
+			}
+		}()
+		w.Bind("counter", counter)
 
 		// Inject CSS
 		w.InjectCSS(string(MustAsset("js/styles.css")))

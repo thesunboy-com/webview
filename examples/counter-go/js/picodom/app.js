@@ -3,7 +3,7 @@ var h = picodom.h
 function UI(c) {
 	return h('div', null,
 					 h('div', null, c.data.value),
-					 h('button', {onclick: function(){c.add(1)}}, 'Incr'));
+					 h('button', {onclick: function(){c.add(0)}}, 'Incr'));
 }
 
 var node;

@@ -70,7 +70,7 @@ func (fi bindataFileInfo) Sys() interface{} {
 	return nil
 }
 
-var _jsPicodomAppJs = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x5c\x8f\x41\x6a\x44\x21\x0c\x86\xd7\x93\x53\x64\xa7\x01\x11\xba\xad\xbc\x03\xcc\x01\x7a\x00\x1b\x2d\x4a\x6d\x1c\x44\xdf\xe6\xe1\xdd\x8b\xd3\x19\xfa\x18\x57\xf2\x27\xf9\xf2\x65\xf7\x0d\x13\x6e\x78\xcb\x5c\x43\xfd\xb1\x09\xe0\x6b\x08\xf7\x5c\x05\x3f\xae\x9a\x09\x0f\xb8\xb4\xd8\x47\x13\x4c\x5a\x85\xbc\x2b\x83\x32\x4a\x31\x70\x59\xef\x25\x44\xb6\xc1\x77\x6f\x77\x5f\x46\xa4\x53\xcf\xe7\xe8\xbd\x8a\x32\x78\x54\xe1\x92\xf9\xfb\x1d\x9f\x7b\x34\x1d\x6c\x7d\x08\xfa\x8d\xe6\x34\xa8\xae\xc2\x4d\x11\x39\x98\x00\x4b\x4f\x6a\x88\xee\xdf\xaa\x45\x09\xb1\xe9\xbb\xd8\x2a\x9d\xe4\x6f\xbe\x73\xd2\x2b\x34\xf7\xa9\x6d\x5d\x50\x87\xf4\xd8\x88\x60\xc2\xe3\x6f\xff\x10\xb8\x3d\x58\x0e\x9e\x4c\x07\xbf\x01\x00\x00\xff\xff\x2d\x62\xcf\xeb\x10\x01\x00\x00")
+var _jsPicodomAppJs = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x5c\x8f\x41\x6a\x44\x21\x0c\x86\xd7\x93\x53\x64\xa7\x01\x91\xae\x2b\xef\x00\x73\x80\x1e\xc0\x46\x8b\x52\x1b\x07\xd1\xb7\x79\x78\xf7\xe2\x74\x86\x3e\xc6\x95\xfc\x49\xbe\x7c\xd9\x7d\xc3\x84\x1b\xde\x32\xd7\x50\x7f\x6c\x02\xf8\x1a\xc2\x3d\x57\xc1\x8f\xab\x66\xc2\x03\x2e\x2d\xf6\xd1\x04\x93\x56\x21\xef\xca\xa0\x8c\x52\x0c\x5c\xd6\x7b\x09\x91\x6d\xf0\xdd\xdb\xdd\x97\x11\xe9\xd4\xf3\x39\x7a\xaf\xa2\x0c\x1e\x55\xb8\x64\xfe\x7e\xc7\xe7\x1e\x4d\x07\x5b\x1f\x82\x7e\xa3\x39\x0d\xaa\xab\x70\x53\x44\x0e\x26\xc0\xd2\x93\x1a\xa2\xfb\xb7\x6a\x51\x42\x6c\xfa\x2e\xb6\x4a\x27\xf9\x9b\xef\x9c\xf4\x0a\xcd\x7d\x6a\x5b\x17\xd4\x21\x3d\x36\x22\x98\xf0\xf8\xdb\x3f\x04\x6e\x0f\x96\x83\x27\xd3\xc1\x6f\x00\x00\x00\xff\xff\x3d\x18\xaa\x96\x10\x01\x00\x00")
 
 func jsPicodomAppJsBytes() ([]byte, error) {
 	return bindataRead(
@@ -85,7 +85,7 @@ func jsPicodomAppJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "js/picodom/app.js", size: 272, mode: os.FileMode(436), modTime: time.Unix(1509657363, 0)}
+	info := bindataFileInfo{name: "js/picodom/app.js", size: 272, mode: os.FileMode(436), modTime: time.Unix(1562306846, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -105,7 +105,7 @@ func jsPicodomVendorPicodomJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "js/picodom/vendor/picodom.js", size: 2410, mode: os.FileMode(436), modTime: time.Unix(1509657363, 0)}
+	info := bindataFileInfo{name: "js/picodom/vendor/picodom.js", size: 2410, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -125,7 +125,7 @@ func jsStylesCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "js/styles.css", size: 213, mode: os.FileMode(436), modTime: time.Unix(1509657363, 0)}
+	info := bindataFileInfo{name: "js/styles.css", size: 213, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -182,9 +182,9 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"js/picodom/app.js": jsPicodomAppJs,
+	"js/picodom/app.js":            jsPicodomAppJs,
 	"js/picodom/vendor/picodom.js": jsPicodomVendorPicodomJs,
-	"js/styles.css": jsStylesCss,
+	"js/styles.css":                jsStylesCss,
 }
 
 // AssetDir returns the file names below a certain
@@ -226,6 +226,7 @@ type bintree struct {
 	Func     func() (*asset, error)
 	Children map[string]*bintree
 }
+
 var _bintree = &bintree{nil, map[string]*bintree{
 	"js": &bintree{nil, map[string]*bintree{
 		"picodom": &bintree{nil, map[string]*bintree{
@@ -284,4 +285,3 @@ func _filePath(dir, name string) string {
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
 	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
-

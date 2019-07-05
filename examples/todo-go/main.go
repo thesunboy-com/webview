@@ -18,7 +18,7 @@ import (
 )
 
 func startServer() string {
-	ln, err := net.Listen("tcp", "127.0.0.1:0")
+	ln, err := net.Listen("tcp", "localhost:8888")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -61,6 +61,7 @@ func render(w webview.WebView, tasks []Task) {
 }
 
 func handleRPC(w webview.WebView, data string) {
+	fmt.Println(data)
 	cmd := struct {
 		Name string `json:"cmd"`
 	}{}

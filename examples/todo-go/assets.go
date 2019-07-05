@@ -86,7 +86,7 @@ func appJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app.js", size: 1873, mode: os.FileMode(436), modTime: time.Unix(1515242360, 0)}
+	info := bindataFileInfo{name: "app.js", size: 1873, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -106,7 +106,7 @@ func indexHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "index.html", size: 615, mode: os.FileMode(436), modTime: time.Unix(1505973140, 0)}
+	info := bindataFileInfo{name: "index.html", size: 615, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -126,7 +126,7 @@ func picodomJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "picodom.js", size: 2299, mode: os.FileMode(436), modTime: time.Unix(1505973119, 0)}
+	info := bindataFileInfo{name: "picodom.js", size: 2299, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -146,7 +146,7 @@ func stylesCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "styles.css", size: 1514, mode: os.FileMode(436), modTime: time.Unix(1505976763, 0)}
+	info := bindataFileInfo{name: "styles.css", size: 1514, mode: os.FileMode(436), modTime: time.Unix(1562228621, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -203,7 +203,7 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"app.js": appJs,
+	"app.js":     appJs,
 	"index.html": indexHtml,
 	"picodom.js": picodomJs,
 	"styles.css": stylesCss,
@@ -248,8 +248,9 @@ type bintree struct {
 	Func     func() (*asset, error)
 	Children map[string]*bintree
 }
+
 var _bintree = &bintree{nil, map[string]*bintree{
-	"app.js": &bintree{appJs, map[string]*bintree{}},
+	"app.js":     &bintree{appJs, map[string]*bintree{}},
 	"index.html": &bintree{indexHtml, map[string]*bintree{}},
 	"picodom.js": &bintree{picodomJs, map[string]*bintree{}},
 	"styles.css": &bintree{stylesCss, map[string]*bintree{}},
@@ -301,4 +302,3 @@ func _filePath(dir, name string) string {
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
 	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
-
